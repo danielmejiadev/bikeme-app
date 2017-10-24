@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent">
+
+    <item
+        android:id="@+id/item_route_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:icon="@android:drawable/ic_dialog_map"
+        android:title="@string/item_route_menu"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/item_event_menu"
+        android:icon="@drawable/ic_event"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:title="@string/item_event_menu"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/item_challenge_menu"
+        android:icon="@drawable/ic_challenge"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:title="@string/item_challenge_menu"
+        app:showAsAction="ifRoom" />
+
+</menu>

@@ -1,0 +1,35 @@
+<android.support.v4.widget.SwipeRefreshLayout
+    android:id="@+id/swipeRefresh"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="@dimen/ms_bottom_navigation_bar_height"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.android.bikeme.bikemeutils.CustomRecyclerView
+            android:id="@+id/custom_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none" />
+
+        <!-- Added an empty view which will be shown when the EmptyRecyclerView is empty -->
+        <LinearLayout
+            android:id="@+id/empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/empty_challenges_text"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

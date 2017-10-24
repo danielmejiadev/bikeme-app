@@ -1,0 +1,193 @@
+<resources>
+    <string name="app_name">Bike Me</string>
+
+    <!-- BIKE ME  -->
+    <string name="title_activity_bike_me_view">Bike Me</string>
+    <string name="insert_problem_hint">Escribe la razón del problema</string>
+    <string name="report_problem_text">Reportar problema</string>
+
+    <!-- USER -->
+    <string name="title_activity_sign_up">Registrate</string>
+    <string name="username_text">Nombre </string>
+    <string name="email_text">Correo electronico</string>
+    <string name="invalid_email_text">Correo electronico invalido</string>
+    <string name="passwords_not_equal_text">Las contraseñas no coinciden</string>
+    <string name="password_weak_text">Contraseña debil, minimo 6 caracteres</string>
+    <string name="recording_error_text">Ha ocurrido un error al registrarse</string>
+    <string name="email_not_available_text">Correo electronico no disponible</string>
+    <string name="error_create_account_text">Ha ocurrido un error al crear la cuenta</string>
+    <string name="recording_text">Registrar</string>
+    <string name="password_hint">Contraseña, Minimo 6 caracteres</string>
+    <string name="password_again_hint">Repita la contraseña</string>
+    <string name="password_sign_in_hint">Contraseña</string>
+    <string name="registering_user">Registrando usuario&#8230;</string>
+
+    <string name="sign_in_text">Ingresar</string>
+    <string name="go_to_recording_text">¿Aun no tienes cuenta? Registrate</string>
+    <string name="quick_access_text">Acceso rapido</string>
+    <string name="google_text">Cuenta de Google</string>
+    <string name="starting_text">Iniciando&#8230;</string>
+    <string name="error_load_account_text">Error al cargar la cuenta</string>
+    <string name="error_sign_in_text">Ha ocurrido un error al iniciar sesion</string>
+    <string name="email_password_incorrect_text">Correo electronico y/o contraseña incorrecta</string>
+
+    <string name="title_activity_user_profile_view">Perfil de usuario</string>
+    <string name="user_profile_progress_bar_level_text">%1$s/%2$s</string>
+    <string name="about_me_text">Acerca de mi</string>
+    <string name="dialog_about_me_edit_text_hint">Ingrese una descripción</string>
+    <string name="user_profile_about_me_text_default">Sin una descripción por el momento</string>
+    <string name="social_networks_text">Redes sociales</string>
+    <string name="dialog_social_networks_edit_hint">Ingresa tu cuenta</string>
+    <string name="user_profile_social_networks_text_default">Sin redes sociales por el momento.</string>
+    <string name="workout_preferences_text">Preferencias para entrenar</string>
+    <string name="dialog_preference_hours_title">Horarios favoritos</string>
+    <string name="user_profile_preference_hours_text_default">Sin horarios para entrenar</string>
+    <string name="dialog_preference_days_title">Dias favoritos</string>
+    <string name="user_profile_preference_days_text_default">Sin dias favoritos para entrenar</string>
+    <string name="level_text">Nivel</string>
+    <string name="level_achieved_title_text">Nuevo nivel alcanzado</string>
+    <string name="congratulations_text">Felicitaciones! Has conseguido</string>
+
+    <!-- WORKOUTS -->
+    <string name="title_activity_workout">Entrenamiento</string>
+    <string name="workout_distance_text">Distancia(Km)</string>
+    <string name="workout_duration_text">Duración</string>
+    <string name="permission_error_workout_home">Por favor acepta la configuracion del  GPS para iniciar el entrenamiento.</string>
+    <string name="workout_start_text">Iniciar</string>
+    <string name="workout_pause_text">Pausar</string>
+    <string name="workout_finish_text">Terminar </string>
+    <string name="workout_restart_text">Reiniciar</string>
+    <string name="workout_speed_text">Velocidad(Km/h)</string>
+    <string name="default_workout_text">0</string>
+    <string name="workout_history_text">Historial</string>
+    <string name="title_activity_workout_history">Historial de entrenamientos</string>
+    <string name="empty_workouts_text">No hay entrenamientos en este momento&#8230;</string>
+    <string name="title_activity_workout_detail">Detalle</string>
+    <string name="name_text">Nombre</string>
+    <string name="comment_text">Comentario</string>
+    <string name="comment_hint">¿Como estuvo el entrenamiento?</string>
+    <string name="workout_altitude_text">Altitud Promedio</string>
+    <string name="date_text">Fecha</string>
+    <string name="workout_type_route_text">Tipo de ruta</string>
+    <string name="not_comment_text">No hay comentarios</string>
+    <string name="workout_name_text">Entrenamiento %1$s %2$s</string>
+    <string name="workout_in_process_text">Entrenamiento en proceso</string>
+    <string name="open_app_text">Abrir aplicación</string>
+
+
+    <!-- ROUTES -->
+    <string name="routes_fragment">Rutas</string>
+    <string name="suggest_text">Sugeridas</string>
+    <string name="new_text">Nuevas</string>
+    <string name="mine_text">Mias</string>
+    <string name="help_text">Ayuda</string>
+    <string name="create_route_exit_dialog_text">¿Desea salir sin terminar de crear la ruta?</string>
+    <string name="warning_text">Advertencia</string>
+    <string name="empty_routes_text">No hay rutas para mostrar en este momento&#8230;</string>
+
+    <string name="title_activity_create_route_view">Nueva ruta</string>
+    <string name="section_map_route_activity_create_route_view">Mapa</string>
+    <string name="in_route">Alinear ruta</string>
+    <string name="create_route_map_please_draw_route">Por favor trace una ruta</string>
+    <string name="create_route_map_region_not_avaliable">Region no disponible</string>
+    <string name="create_route_map_drawing_route">Trazando ruta&#8230;</string>
+    <string name="create_route_map_validation_route">Validando la ruta &#8230;</string>
+    <string name="create_route_map_route_already_exits">La ruta ya existe</string>
+    <string name="create_route_map_error_validating_route">Ocurrio un error validando la ruta</string>
+    <string name="create_route_information_title">Informacion de la ruta</string>
+    <string name="create_route_sucessfully">Ruta creada exitosamente</string>
+    <string name="create_route_error">Ocurrio un error, no se pudo crear la ruta</string>
+    <string name="departure_text">Inicio</string>
+    <string name="arrival_text">Llegada</string>
+    <string name="help_map_put_markers">Presiona la pantalla para ubicar marcadores por donde desea que pase la ruta, Maximo 25 marcadores.</string>
+    <string name="help_map_delete_marker">Para eliminar un marcador, presionelo durante 1 segundo y arrastrelo hasta el icono de basura, luego sueltelo cuando cambie de color.</string>
+    <string name="help_map_in_route">Presione el boton flotante para alinear los marcadores a las calles mas cercanas.</string>
+    <string name="help_map_refresh">Presione el boton para eliminar la ruta y volver a dibujar una nueva.</string>
+
+    <string name="section_information_route_activity_create_route_view">Informacion</string>
+    <string name="route_name_hint">Asigna un nombre</string>
+    <string name="route_ratings_hint">Califique la ruta</string>
+    <string name="route_description_hint">Escribe una pequeña descripción</string>
+    <string name="route_level_hint">Seleccione una dificultad</string>
+    <string name="route_arrival_hint">Direccion de llegada</string>
+    <string name="route_departure_hint">Direccion de salida</string>
+    <string name="create_route_information_error_name">Escriba un nombre por favor</string>
+    <string name="create_route_information_error_description">Escriba una descripción por favor</string>
+    <string name="create_route_information_error_departure">Escriba una direccion del lugar de salida</string>
+    <string name="create_route_information_error_rating">Califique la ruta por favor</string>
+    <string name="create_route_information_error_arrival">Escriba una direccion del lugar de llegada</string>
+    <string name="help_information_name">\u2022 Ingrese un nombre para identificar la ruta.</string>
+    <string name="help_information_rating">\u2022 Califica la ruta segun tu gusto en una escala de 0.1 a 5.</string>
+    <string name="help_information_departure">\u2022 Ingrese una descripción sobre el lugar de salida de la ruta.</string>
+    <string name="help_information_arrival">\u2022 Ingrese una descripción sobre el lugar de llegada de la ruta.</string>
+    <string name="help_information_description">\u2022 Ingrese una descripción general sobre la ruta, como lugares de intereses, peligros en seguridad entre otras.</string>
+    <string name="help_information_level">\u2022 Seleccione la dificultad que determine para el recorrido.</string>
+    <string name="create_route_error_fields">Hay errores en los campos</string>
+
+    <string name="title_activity_route_detail">Ruta</string>
+    <string name="route_detail_rated_text">Calificada: %1$s %2$s</string>
+    <string name="route_ratings_date_hint">Fecha de calificacion</string>
+    <string name="rate_route_text">Calificar</string>
+    <string name="submit_rate_route">CALIFICAR</string>
+    <string name="title_activity_route_detail_map">Mapa de la ruta</string>
+
+
+    <!-- EVENTS -->
+    <string name="events_fragment">Eventos</string>
+    <string name="empty_events_text">No hay eventos en este momento&#8230;</string>
+    <string name="events_see_more_text">VER MAS&#8230;</string>
+
+    <string name="title_activity_event_detail">Evento</string>
+    <string name="event_today_text">El evento es hoy!</string>
+    <string name="event_days_before_text" formatted="false">Falta%s %d dia%s</string>
+    <string name="event_days_after_text" formatted="false">Fue hace %d dia%s</string>
+    <string name="event_detail_maybe_go_text">Quiza asista</string>
+    <string name="event_detail_go_text">Asistire</string>
+    <string name="event_detail_not_go_text">No Asistire</string>
+    <string name="event_detail_want_go_text">¿Quieres ir?</string>
+    <string name="event_detail_travel_button_text">Recorrido</string>
+    <string name="title_activity_event_detail_guests">Invitados</string>
+
+    <!-- CHALLENGES -->
+    <string name="challenge_fragment">Retos</string>
+    <string name="challenge_achieved_text">Reto Superado</string>
+    <string name="empty_challenges_text">No hay retos en este momento&#8230;</string>
+
+
+    <!-- UTILS  -->
+    <string name="edit_text">Editar</string>
+    <string name="save_text">Guardar</string>
+    <string name="cancel_text">Cancelar</string>
+    <string name="discard_text">Descartar</string>
+    <string name="continue_text">Continuar</string>
+    <string name="saving_text">Guardando&#8230;</string>
+    <string name="percent_formatted_text">%1$d%%</string>
+    <string name="error_try_again">Ocurrio un error, Intenta nuevamente</string>
+    <string name="loading_text">Cargando</string>
+    <string name="check_connection_text">Verifica tu conexión a internet e intenta nuevamente</string>
+    <string name="map_offline_not_downloaded">Mapa offline aun no descargado, revisa tu conexión e intenta nuevamente.</string>
+
+    <!-- MAP BOX ACCESS TOKEN  -->
+    <string name="access_token_map_box">pk.eyJ1IjoiZGFuaWVsbWVqaWEiLCJhIjoiY2oxdXV0MnpmMDAwMzJxbnl2eWp2anR0eSJ9.AG0SjdES4yKbbSi4urNXRg</string>
+
+    <!-- SYNCHRONIZATION -->
+    <string name="account_type">com.android.bikeme.account</string>
+    <string name="provider_authority">com.android.bikeme</string>
+
+    <!-- MENU NAVBAR  -->
+    <string name="item_route_menu">Rutas</string>
+    <string name="item_event_menu">Eventos</string>
+    <string name="item_challenge_menu">Desafios</string>
+
+    <!-- TOOLBAR -->
+    <string name="action_settings">Settings</string>
+    <string name="sign_out">Cerrar sesión</string>
+    <string name="item_profile_menu">Mi Perfil</string>
+
+     <string name="large_text">
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+    </string>
+    <string name="confirm_text">Aceptar</string>
+</resources>

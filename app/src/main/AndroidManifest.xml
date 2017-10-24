@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.bikeme">
+
+    <!-- Autentication-Sincronization -->
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SYNC_STATS" />
+
+    <!-- Internet -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Location -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+
+    <!-- Vibration -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".application.BikeMeApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_bike_me"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyANPZP4QyS1yiPnXQRMLcwGXhtZWo2oAVg" />
+
+        <!-- SYNCHRONIZATION -->
+        <service android:name=".databaseremote.autentication.AuthenticationService">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@xml/authenticator" />
+        </service>
+        <service
+            android:name=".databaseremote.syncronization.SynchronizationService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.content.SyncAdapter"
+                android:resource="@xml/sync_adapter" />
+        </service>
+        <provider
+            android:name=".databaselocal.contentprovider.BikeMeContentProvider"
+            android:authorities="com.android.bikeme"
+            android:exported="false"
+            android:syncable="true"/>
+
+        <!-- MAP OFFLINE -->
+        <service
+            android:name=".bikemeutils.DownloadMapOfflineService"
+            android:enabled="true" />
+        <receiver
+            android:name=".bikemeutils.NetworkReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+
+        <!-- SPLASH  ACTIVITY -->
+        <activity
+            android:name=".mvp.views.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- BIKE ME ACTIVITY -->
+        <activity
+            android:name=".mvp.views.BikeMeActivity"
+            android:label="@string/title_activity_bike_me_view"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar.NoTranslucent2" />
+
+        <!-- USER'S ACTIVITIES -->
+        <activity
+            android:name=".mvp.views.user.SignInActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dark" />
+        <activity
+            android:name=".mvp.views.user.SignUpActivity"
+            android:label="@string/title_activity_sign_up"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dark" />
+        <activity
+            android:name=".mvp.views.user.UserProfileActivity"
+            android:label="@string/title_activity_user_profile_view"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar.NoTranslucent2" />
+
+        <!-- ROUTES'S ACTIVITIES -->
+        <activity
+            android:name=".mvp.views.routes.create_route.CreateRouteActivity"
+            android:label="@string/title_activity_create_route_view"
+            android:parentActivityName=".mvp.views.BikeMeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar.NoTranslucent2" />
+        <activity
+            android:name=".mvp.views.routes.route_detail.RouteDetailActivity"
+            android:label="@string/title_activity_route_detail"
+            android:parentActivityName=".mvp.views.BikeMeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar.NoTranslucent2">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.bikeme.mvp.views.BikeMeActivity" />
+        </activity>
+        <activity
+            android:name=".mvp.views.routes.route_detail.RouteDetailMapOfflineActivity"
+            android:label="@string/title_activity_route_detail_map"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar.NoTranslucent2" />
+        <activity
+            android:name=".mvp.views.routes.route_detail.RouteDetailMapOnlineActivity"
+            android:label="@string/title_activity_route_detail_map"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar.NoTranslucent2" />
+
+        <!-- EVENTS'S ACTIVITIES -->
+        <activity
+            android:name=".mvp.views.events.event_detail.EventDetailActivity"
+            android:label="@string/title_activity_event_detail"
+            android:parentActivityName=".mvp.views.BikeMeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar.NoTranslucent2">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.bikeme.mvp.views.BikeMeActivity" />
+        </activity>
+        <activity
+            android:name=".mvp.views.events.event_detail.EventDetailGuestsActivity"
+            android:label="@string/title_activity_event_detail_guests"
+            android:parentActivityName=".mvp.views.events.event_detail.EventDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar.NoTranslucent2">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".mvp.views.events.event_detail.EventDetailActivity" />
+        </activity>
+
+        <!-- WORKOUT'S ACTIVITIES -->
+        <activity
+            android:name=".mvp.views.workout.WorkoutHomeActivity"
+            android:label="@string/title_activity_workout"
+            android:parentActivityName=".mvp.views.BikeMeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar.NoTranslucent2">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".mvp.views.BikeMeActivity" />
+        </activity>
+        <activity
+            android:name=".mvp.views.workout.workout_history.WorkoutHistoryActivity"
+            android:label="@string/title_activity_workout_history"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar.NoTranslucent2">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".mvp.views.workout.WorkoutHomeActivity" />
+        </activity>
+        <activity
+            android:name=".mvp.views.workout.workout_detail.WorkoutDetailActivity"
+            android:label="@string/title_activity_workout_detail"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar.NoTranslucent2"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".mvp.views.workout.WorkoutHomeActivity" />
+        </activity>
+
+        <service
+            android:name=".mvp.views.workout.WorkoutBackgroundService"
+            android:enabled="true" />
+
+    </application>
+</manifest>

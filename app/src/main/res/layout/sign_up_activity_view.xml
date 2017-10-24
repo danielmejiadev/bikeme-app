@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:layout_scrollFlags="scroll|enterAlways"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="Bike Me"
+            android:textSize="56sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <EditText
+                android:id="@+id/input_name_create"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:layout_marginBottom="6dp"
+                android:padding="8dp"
+                android:background="@color/white"
+                android:hint="@string/username_text" />
+
+            <EditText
+                android:id="@+id/input_email_create"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                android:padding="8dp"
+                android:background="@color/white"
+                android:hint="@string/email_text" />
+
+            <EditText android:id="@+id/input_password_create"
+                android:layout_width="match_parent"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                android:padding="8dp"
+                android:background="@color/white"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="@string/password_hint"/>
+
+            <EditText android:id="@+id/input_repeat_password_create"
+                android:layout_width="match_parent"
+                android:layout_marginTop="6dp"
+                android:padding="8dp"
+                android:background="@color/white"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="@string/password_again_hint"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/email_password_sign_up_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="-5dip"
+                android:layout_marginRight="-5dip"
+                android:textColor="@color/white"
+                android:enabled="false"
+                android:backgroundTint="@color/divider"
+                app:backgroundTint="@color/divider"
+                android:text="@string/recording_text" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
+

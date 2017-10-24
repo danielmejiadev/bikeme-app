@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".mvp.views.BikeMeActivity">
+
+
+    <item
+        android:id="@+id/item_workout"
+        android:orderInCategory="1"
+        android:icon="@drawable/ic_workout"
+        android:title="@string/item_profile_menu"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/item_profile"
+        android:orderInCategory="2"
+        android:icon="@drawable/ic_profile"
+        android:title="@string/item_profile_menu"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/item_report_problem_toolbar"
+        android:orderInCategory="3"
+        android:title="@string/report_problem_text"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/item_sign_out_toolbar"
+        android:orderInCategory="3"
+        android:title="@string/sign_out"
+        app:showAsAction="never" />
+</menu>
+

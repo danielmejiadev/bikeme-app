@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".mvp.views.routes.create_route.CreateRouteActivity">
+
+     <item
+        android:id="@+id/create_route_help"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_help"
+        android:title="@string/in_route"
+        app:showAsAction="ifRoom" />
+</menu>

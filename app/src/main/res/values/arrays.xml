@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="route_levels">
+        <item>Principiante</item>
+        <item>Medio</item>
+        <item>Dificil</item>
+        <item>Muy Dificil</item>
+        <item>Imposible</item>
+    </string-array>
+
+    <string-array name="days_of_week">
+        <item>Lunes</item>
+        <item>Martes</item>
+        <item>Miercoles</item>
+        <item>Jueves</item>
+        <item>Viernes</item>
+        <item>Sabado</item>
+        <item>Domingo</item>
+    </string-array>
+
+    <string-array name="months_of_year">
+        <item>Enero</item>
+        <item>Febrero</item>
+        <item>Marzo</item>
+        <item>Abril</item>
+        <item>Mayo</item>
+        <item>Junio</item>
+        <item>Julio</item>
+        <item>Agosto</item>
+        <item>Septiembre</item>
+        <item>Octubre</item>
+        <item>Noviembre</item>
+        <item>Diciembre</item>
+    </string-array>
+
+    <string-array name="hours_of_day">
+        <item>Mañana</item>
+        <item>Tarde</item>
+        <item>Todo el día</item>
+    </string-array>
+
+    <string-array name="social_networks">
+        <item>facebook</item>
+        <item>twitter</item>
+        <item>instagram</item>
+        <item>snapchat</item>
+        <item>youtube</item>
+    </string-array>
+
+    <string-array name="type_routes">
+        <item>Terreno Llano</item>
+        <item>Media Montaña</item>
+        <item>Alta Montaña</item>
+    </string-array>
+
+
+    <string-array name="challenge_names">
+        <item>Entrenamiento</item>
+        <item>Distancias</item>
+        <item>Tiempos</item>
+        <item>Rutas</item>
+        <item>Calificaciones</item>
+        <item>Metas semanales</item>
+        <item>Metas mensuales</item>
+        <item>Records de distancias</item>
+        <item>Records de tiempos</item>
+    </string-array>
+
+    <string-array name="challenge_descriptions">
+        <item>Terminar entrenamiento %s </item>
+        <item>Realizar un entrenamiento de minimo %s Km</item>
+        <item>Entrenar durante minimo %s horas</item>
+        <item>Crear %s rutas en total </item>
+        <item>Calificar %s rutas en total </item>
+        <item>Recorrer %s Km en una semana</item>
+        <item>Recorrer %s Km durante un mes</item>
+        <item>Recorrer %s Km en total </item>
+        <item>Sumar %s horas de entrenamiento en total</item>
+    </string-array>
+
+
+    <string-array name="user_levels">
+        <item>Novato</item>
+        <item>Aprendiz</item>
+        <item>Campeón</item>
+        <item>Profesional</item>
+        <item>Maestro</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "506971232414",
+    "firebase_url": "https://bike-me-release.firebaseio.com",
+    "project_id": "bike-me-release",
+    "storage_bucket": "bike-me-release.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:506971232414:android:2c111244ffd46374",
+        "android_client_info": {
+          "package_name": "com.android.bikeme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "506971232414-hpr9jnj78devj070o16jri5ckiq55b4b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.android.bikeme",
+            "certificate_hash": "f4495bfc154bd14d0ba821b49500724a5c354e90"
+          }
+        },
+        {
+          "client_id": "506971232414-9datr47gpup4bo3t3ishs0qpes6sm6j5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtPdREaI_eN8Ar8GMKXB0aNIFlR2nyrhA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "506971232414-9datr47gpup4bo3t3ishs0qpes6sm6j5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

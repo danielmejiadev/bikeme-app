@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/content_route_detail"
+    tools:context=".mvp.views.routes.route_detail.RouteDetailActivity">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:orientation="vertical">
+
+            <!-- Route Name -->
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/text_margin">
+
+                <EditText
+                    android:id="@+id/input_route_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/TitleStyle"
+                    android:gravity="center"
+                    android:maxLength="20"
+                    android:inputType="text|textCapSentences"
+                    android:hint="@string/route_name_hint" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/text_margin"
+                android:orientation="vertical">
+
+                <RatingBar
+                    android:id="@+id/input_route_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:numStars="5"
+                    android:stepSize="0.5"
+                    android:progressBackgroundTint="@color/divider"
+                    android:foregroundTint="@color/divider"
+                    android:secondaryProgressTint="@color/divider"
+                    android:progressTint="@color/primary"/>
+
+                <TextView
+                    android:id="@+id/text_route_rating"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/route_ratings_hint"
+                    android:layout_marginTop="-12dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+
+            <!-- Route  departure -->
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_departure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/text_margin">
+
+                <EditText
+                    android:id="@+id/input_route_departure"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/BodyStyle"
+                    android:gravity="top|start"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:hint="@string/route_departure_hint" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- Route arrival -->
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_arrival"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/text_margin">
+
+                <EditText
+                    android:id="@+id/input_route_arrival"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/BodyStyle"
+                    android:gravity="top|start"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:hint="@string/route_arrival_hint" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- Route description -->
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/text_margin">
+
+                <EditText
+                    android:id="@+id/input_route_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/BodyStyle"
+                    android:gravity="top|start"
+                    android:inputType="textMultiLine|textCapSentences"
+                    android:lines="3"
+                    android:maxLines="3"
+                    android:maxLength="200"
+                    android:hint="@string/route_description_hint" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/text_margin">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/route_level_hint" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/input_route_level"
+                    android:entries="@array/route_levels"
+                    android:layout_marginBottom="@dimen/bbn_bottom_navigation_height" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
+
